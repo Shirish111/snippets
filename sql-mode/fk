@@ -1,0 +1,4 @@
+# key: fk
+# name: fk
+# --
+FOREIGN KEY (${1:column_name}) REFERENCES ${2:table_name}(${3:column_name})

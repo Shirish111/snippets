@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: vp
+# key: vp
+# --
+vector<pair<${1:int}, ${2:int}>>

@@ -1,0 +1,6 @@
+# key: c
+# name: c
+# --
+CREATE TABLE ${1:table_name} (
+  $0
+);

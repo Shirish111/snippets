@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: v
+# key: v
+# --
+vector<${1:ll}> $0;

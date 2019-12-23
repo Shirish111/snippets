@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: ef
+# key: ef
+# --
+else if(${1:condition}) {
+  $0
+}

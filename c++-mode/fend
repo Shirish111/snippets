@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: fend
+# key: fend
+# --
+$1.find($2) != $1.end()

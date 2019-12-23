@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: java1
+# key: java1
+# --
+import java.io.*;
+import java.util.*;
+import java.math.*;
+
+class a {
+  static Scanner in = new Scanner(System.in);
+  static void solve() {
+    $0
+  }
+  public static void main(String[] args) {
+    int t = in.nextInt();
+    while (t != 0) {
+      solve();
+    }
+  }
+}

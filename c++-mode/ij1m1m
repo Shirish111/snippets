@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ij1m1m
+# key: ij1m1m
+# --
+[i - 1][j - 1]

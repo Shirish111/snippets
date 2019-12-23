@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: solve
+# key: solve
+# --
+def solve():
+    $0

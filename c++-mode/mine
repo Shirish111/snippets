@@ -1,0 +1,4 @@
+# key: mine
+# name: mine
+# --
+min_element($1.begin(), $1.end())

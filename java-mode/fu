@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: fu
+# key: fu
+# --
+static void ${1:process}($2) {
+  $0
+}

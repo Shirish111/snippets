@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: v1
+# key: v1
+# --
+vector<${1:int}>

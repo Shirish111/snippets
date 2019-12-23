@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: stk
+# key: stk
+# --
+stack<${1:int}>

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: i
+# key: i
+# --
+INSERT INTO ${1:table_name} VALUES ($0);

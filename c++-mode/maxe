@@ -1,0 +1,4 @@
+# key: maxe
+# name: maxe
+# --
+max_element($1.begin(), $1.end())

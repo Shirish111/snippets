@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: op
+# key: op
+# --
+out.println($1);$0

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: copyout
+# key: copyout
+# --
+copy($1.begin(), $1.end(), ostream_iterator<${2:int}>(cout, " ")); cout << "\n";

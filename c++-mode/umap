@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: umap
+# key: umap
+# --
+unordered_map<${1:int}, ${2:int}>

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: pa
+# key: pa
+# --
+pair<${1:int}, ${2:int}>
