@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: destroyc
+# key: destroyc
+# --
+def destroy
+  render(:show, :ok) && return if $1.destroy
+
+  Rails.logger.error $1.errors.full_messages
+  raise 'Failed to destroy'
+end

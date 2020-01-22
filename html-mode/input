@@ -1,0 +1,4 @@
+# key: input
+# name: input
+# --
+<input type="$1" value="$2" placeholder="$3" />

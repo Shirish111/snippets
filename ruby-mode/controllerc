@@ -1,0 +1,52 @@
+# key: controllerc
+# name: controllerc
+# --
+# frozen_string_literal: true
+
+class $1sController < ApplicationController
+  before_action :set_$1, only: %i[show update destroy]
+  before_action :build_$1, only: :create
+
+  def index
+    @$1s = $1.all
+  end
+
+  def create
+    render(:show, status: :created) && return if @$1.save
+
+    Rails.logger.error @$1.errors.full_messages
+    raise 'Failed to create $1'
+  end
+
+  def show; end
+
+  def update
+    if @$1.update(permitted_attributes_for_update)
+      render(:show, status: :ok) && return
+    end
+
+    Rails.logger.error @$1.errors.full_messages
+    raise 'Failed to update $1'
+  end
+
+  private
+
+  def build_$1
+    @$1 = $1.new(permitted_attributes_for_create)
+  end
+
+  def permitted_attributes_for_create
+    params.permit()
+  end
+
+  def permitted_attributes_for_update
+    params.permit()
+  end
+
+  def set_$1
+    @$1 = $1.find(params[:id])
+  rescue StandardError => e
+    Rails.logger.error e.message
+    raise '$1 not found'
+  end
+end

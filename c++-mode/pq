@@ -1,0 +1,4 @@
+# key: pq
+# name: pq
+# --
+priority_queue<${1:int}, vector<$1>, ${2:$$(yas-choose-value '("greater" "less"))}<$1>> pq;

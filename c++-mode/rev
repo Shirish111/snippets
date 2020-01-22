@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: rev
+# key: rev
+# --
+reverse($1.begin(), $1.end());

@@ -1,0 +1,9 @@
+# key: setc
+# name: setc
+# --
+def set_$1
+  @$1 = $1.find(parmas[:${2:id}])
+rescue StandardError => e
+  Rails.logger.error [e.message, @$1.errors.full_messages]
+  raise '$1 not found'
+end

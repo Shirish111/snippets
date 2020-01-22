@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: updatec
+# key: updatec
+# --
+def update
+  render(:show, status: :ok) && return if $1.update(permitted_attributes_for_update)
+
+  Rails.logger.error $1.errors.full_messages
+  raise 'Failed to update'
+end

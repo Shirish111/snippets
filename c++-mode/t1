@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: t1
+# key: t1
+# --
+int t;
+cin >> t;
+while(t--) {
+  process();
+}

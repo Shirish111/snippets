@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: table
+# key: table
+# --
+<table>
+  <tr>
+    <th>$0</th>
+  </tr>
+</table>

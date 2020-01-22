@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: install
+# key: ins
+# --
+Let's install the required packages.
+#+begin_src sh
+sudo apt-get install python-django
+pip install django
+#+end_src
