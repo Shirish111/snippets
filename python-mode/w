@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: w
+# key: w
+# --
+while $1:
+  $0

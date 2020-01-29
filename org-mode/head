@@ -3,4 +3,4 @@
 # key: head
 # --
 #+TITLE: ${1:title}
-#+SETUPFILE: ~/.emacs.d/org-templates/default_header_options.org
+#+SETUPFILE: ~/.emacs.d/org-templates/custom/default_header_options.org
