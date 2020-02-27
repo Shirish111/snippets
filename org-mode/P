@@ -1,0 +1,5 @@
+# key: P
+# name: P
+# --
+* ${1:Topic}
+  - [[./${1:$(s-upper-camel-case yas-text)}/index.org][$1]]

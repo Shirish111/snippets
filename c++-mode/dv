@@ -1,0 +1,4 @@
+# key: dv
+# name: dv
+# --
+<< "${1:`(current-kill 0)`} = " << $1 << " "

@@ -1,0 +1,6 @@
+# key: sc
+# name: sc
+# --
+#+begin_src C++
+$0
+#+end_src
