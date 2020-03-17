@@ -1,0 +1,10 @@
+# key: ccreate
+# name: ccreate
+# --
+def create
+  @$1.save!
+  render(:show, status: :created)
+rescue ActiveRecord::ActiveRecordError => e
+  Rails.logger.error(e.message)
+  raise CustomErrors::UnprocessableEntity, @$1.errors.full_messages
+end

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: process
+# key: process
+# --
+void process() {
+  $0
+}

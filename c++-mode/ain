@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: ain
+# key: ain
+# --
+for(int i = 0; i < ${1:n}; ++i) {
+  cin >> ${2:a}[i];
+}

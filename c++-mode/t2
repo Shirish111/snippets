@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: t2
+# key: t2
+# --
+int t;
+cin >> t;
+for(int tc = 0; tc < t; ++tc) {
+  $0
+}

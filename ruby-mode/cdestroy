@@ -1,0 +1,10 @@
+# key: cdestroy
+# name: cdestroy
+# --
+def destroy
+  @$1.destroy!
+  head :ok
+rescue ActiveRecord::ActiveRecordError => e
+  Rails.logger.error(e.message)
+  raise CustomErrors::UnprocessableEntity, @$1.errors.full_messages
+end

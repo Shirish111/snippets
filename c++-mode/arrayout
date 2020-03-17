@@ -1,0 +1,7 @@
+# key: aout
+# name: aout
+# --
+for(int i = 0; i < $1; i++) {
+  cout << $2[i] << " ";
+}
+cout << "\n";

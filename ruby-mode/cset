@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: cset
+# key: cset
+# --
+def set_$1
+  @$1 = ${1:$(s-titleize yas-text)}.find(params[:id])
+rescue ActiveRecord::RecordNotFound => e
+  Rails.logger.error(e.message)
+  raise CustomExceptions::NotFound, '${1:$(s-titleize yas-text)} not found'
+end

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: pairout
+# key: pairout
+# --
+cout << $1.first << " " << $1.second << " ";

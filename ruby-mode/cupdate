@@ -1,0 +1,19 @@
+# key: cupdate
+# name: cupdate
+# --
+def update
+  @$1.update!(permitted_attributes(@user))
+rescue ActiveRecord::ActiveRecordError => e
+  Rails.logger.error(e.message)
+  raise CustomErrors::UnprocessableEntity, @$1.errors.full_messages
+end
+# key: cupdate
+# name: cupdate
+# --
+def update
+  @$1.update!(permitted_attributes(@user))
+  render(:show, status: :ok)
+rescue ActiveRecord::ActiveRecordError => e
+  Rails.logger.error(e.message)
+  raise CustomErrors::UnprocessableEntity, @$1.errors.full_messages
+end

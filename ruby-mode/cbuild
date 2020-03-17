@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: cbuild
+# key: cbuild
+# --
+def build_$1
+  @$1 = ${1:$(s-titleize yas-text)}.new(permitted_attributes(${1:$(s-titleize yas-text)}))
+  authorize @$1
+end
